@@ -11,6 +11,8 @@ menu:
         params:
             icon: about
 
+image: post-bg-about-1.png
+
 comments: false
 ---
 
