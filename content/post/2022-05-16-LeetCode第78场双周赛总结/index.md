@@ -6,7 +6,7 @@ image: post-bg-20220516.png
 categories: 
     - leetcode contest
 tags:
-    
+    - 动态规划
 ---
 
 ![image-20220515162208775](https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20220515162208775.png)

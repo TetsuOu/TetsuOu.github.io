@@ -6,7 +6,7 @@ image:   post-bg-20220425.png
 categories:
     - leetcode contest
 tags:
-    
+    - 线段树
 ---
 
 ![image-20220424130334022](https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20220424130334022.png)

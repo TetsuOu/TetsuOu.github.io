@@ -49,7 +49,7 @@ limit = 10
 type = "tag-cloud"
 
 [widgets.homepage.params]
-limit = 10
+limit = 50
 
 [[widgets.page]]
 type = "toc"
@@ -76,7 +76,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "gitalk"
 
 [comments.disqusjs]
 shortname = ""
@@ -138,11 +138,11 @@ reactionsEnabled = 1
 emitMetadata = 0
 
 [comments.gitalk]
-owner = ""
-admin = ""
-repo = ""
-clientID = ""
-clientSecret = ""
+owner = "TetsuOu"
+admin = "TetsuOu"
+repo = "gittalk_comment"
+clientID = "064cc41342b9363baf88"
+clientSecret = "300dcc526e6287d7cd05670f2639c9fe3bd40655"
 
 [comments.cusdis]
 host = ""

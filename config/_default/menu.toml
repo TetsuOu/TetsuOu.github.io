@@ -23,3 +23,12 @@ url = "https://blog.csdn.net/qq_40889820"
 
 [social.params]
 icon = "csdn"
+
+
+[[social]]
+identifier = "leetcode"
+name = "leetcode"
+url = "https://leetcode.cn/u/wangzhebufangqi-c/"
+
+[social.params]
+icon = "leetcode"

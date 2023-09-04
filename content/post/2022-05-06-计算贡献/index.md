@@ -6,6 +6,7 @@ image: post-bg-20220506.png
 categories:
     - data structure and algorithm 
 tags:
+    - 计算贡献
     
 ---
 ## 前言

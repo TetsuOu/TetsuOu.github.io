@@ -6,7 +6,7 @@ image: post-bg-20220503.png
 categories:
     - leetcode contest
 tags:
-    
+    - BFS 
 ---
 
 ![image-20220502181041817](https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20220502181041817.png)

@@ -6,6 +6,7 @@ image:      post-bg-20220418.png
 categories: leetcode contest
 math: true
 tags:
+    - 树型DP
 ---
 
 ![image-20220418100746064](https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20220418100746064.png)
