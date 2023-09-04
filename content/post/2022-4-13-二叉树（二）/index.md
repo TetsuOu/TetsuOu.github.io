@@ -3,10 +3,10 @@ title:      二叉树（二）
 description:   二叉树的建立
 date:       2022-04-13 00:00:00+0000
 image:      post-bg-20220413.png
-catagories:
+categories:
     - data structure and algorithm
 tags:
-    - data structure and algorithm 
+    - 二叉树
 ---
 ## 前言
 

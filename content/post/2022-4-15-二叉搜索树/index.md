@@ -2,8 +2,8 @@
 title:      二叉搜索树
 description:   BST；LCA问题
 date:       2022-04-15 00:00:00+0000
-image: post-bg-20220415.png
-catagoties: 
+image:  post-bg-20220415.png
+categories: 
     - data structure and algorithm 
 tags:
     - BST 
@@ -45,7 +45,7 @@ tags:
 提示：
 
 树中节点数目范围在[1, 10^4] 内
--231 <= Node.val <= 231 - 1
+-2^31 <= Node.val <= 2^31 - 1
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/validate-binary-search-tree
@@ -245,8 +245,8 @@ public:
 
 提示：
 
-树中节点数目在范围 [2, 105] 内。
--109 <= Node.val <= 109
+树中节点数目在范围 [2, 10^5] 内。
+-10^9 <= Node.val <= 10^9
 所有 Node.val 互不相同 。
 p != q
 p 和 q 均存在于给定的二叉树中。
@@ -448,10 +448,10 @@ public:
 
 提示：
 
-树中的节点数将在 [0, 104]的范围内。
--108 <= Node.val <= 108
+树中的节点数将在 [0, 10^4]的范围内。
+-10^8 <= Node.val <= 10^8
 所有值 Node.val 是 独一无二 的。
--108 <= val <= 108
+-10^8 <= val <= 10^8
 保证 val 在原始BST中不存在。
 
 来源：力扣（LeetCode）
@@ -563,11 +563,11 @@ public:
 
 提示:
 
-节点数的范围 [0, 104].
--105 <= Node.val <= 105
+节点数的范围 [0, 10^4].
+-10^5 <= Node.val <= 10^5
 节点值唯一
 root 是合法的二叉搜索树
--105 <= key <= 105
+-10^5 <= key <= 10^5
 
 
 进阶： 要求算法时间复杂度为 O(h)，h 为树的高度。
@@ -784,11 +784,11 @@ public:
 
 提示：
 
-树中节点数在范围 [1, 104] 内
-0 <= Node.val <= 104
+树中节点数在范围 [1, 10^4] 内
+0 <= Node.val <= 10^4
 树中每个节点的值都是 唯一 的
 题目数据保证输入是一棵有效的二叉搜索树
-0 <= low <= high <= 104
+0 <= low <= high <= 10^4
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/trim-a-binary-search-tree
@@ -897,8 +897,8 @@ public:
 
 提示：
 
-1 <= nums.length <= 104
--104 <= nums[i] <= 104
+1 <= nums.length <= 10^4
+-10^4 <= nums[i] <= 10^4
 nums 按 严格递增 顺序排列
 
 来源：力扣（LeetCode）
@@ -975,8 +975,8 @@ public:
 
 提示：
 
-树中的节点数介于 0 和 104 之间。
-每个节点的值介于 -104 和 104 之间。
+树中的节点数介于 0 和 10^4 之间。
+每个节点的值介于 -10^4 和 10^4 之间。
 树中的所有值 互不相同 。
 给定的树为二叉搜索树。
 
