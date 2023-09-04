@@ -5,14 +5,10 @@ links:
     description: 收藏的部分网站
     website: https://tetsuou.github.io/SiteNavigation/
     image: sitenavigation.png
-
-links:
-  - title :
+  - title : MyBookmarks
     description: 收藏的部分书签
     website: http://tetsuou.github.io/Bookmarks
     image: bookmarks.png
-
-
 menu:
     main: 
         weight: 4

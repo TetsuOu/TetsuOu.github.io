@@ -16,7 +16,22 @@ image: post-bg-about-1.png
 comments: false
 ---
 
-## Todo
+## わたし
 
-再度启航！
+TetsuOu是对应的日语罗马音。
+
+- 现居上海，24年研究生毕业
+
+- 本科hnu，硕士ustc，计算机科学与技术专业
+
+- 运动爱好乒羽
+
+- 终身学习，不局限于专业
+
+## 与我联系
+
+- Wechat：wzhe0xff
+
+- Email: wzhe\@mail.ustc.edu.cn
+
 

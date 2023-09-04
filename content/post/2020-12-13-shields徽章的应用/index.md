@@ -142,5 +142,15 @@ https://raw.githubusercontent.com/TetsuOu/TetsuOu/main/data.json
 
 shields还支持一些预置的一些徽章生成，比如GitHub Workflow Status、License等
 
+### Github Workflow Status
+
+```
+![](https://img.shields.io/github/actions/workflow/status/TetsuOu/TetsuOu.github.io/deploy.yml?branch=master)
+```
+![](https://img.shields.io/github/actions/workflow/status/TetsuOu/TetsuOu.github.io/deploy.yml?branch=master)
+
+```
+![Github License](https://img.shields.io/github/license/TetsuOu/TetsuOu.github.io)
+```
 ![Github License](https://img.shields.io/github/license/TetsuOu/TetsuOu.github.io)
 
