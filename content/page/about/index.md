@@ -16,22 +16,14 @@ image: post-bg-about-1.png
 comments: false
 ---
 
-## わたし
+## Educational background
 
-TetsuOu是对应的日语罗马音。
+- 2017~2021, hnu, cs
 
-- 现居合肥，24年研究生毕业
+- 2021~2024, ustc, cs
 
-- 本科hnu，硕士ustc，计算机科学与技术专业
-
-- 运动爱好乒羽
-
-- 学习是终身事业
-
-## 与我联系
+## Contact me
 
 - Wechat：wzhe0xff
 
 - Email: wzhe\@mail.ustc.edu.cn
-
-
