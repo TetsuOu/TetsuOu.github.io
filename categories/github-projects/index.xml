@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github Projects on おう てつ の blog</title><link>https://tetsuou.github.io/categories/github-projects/</link><description>Recent content in Github Projects on おう てつ の blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tetsuou.github.io/categories/github-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>MkDocs-material的应用</title><link>https://tetsuou.github.io/p/mkdocs-material%E7%9A%84%E5%BA%94%E7%94%A8/</link><pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate><guid>https://tetsuou.github.io/p/mkdocs-material%E7%9A%84%E5%BA%94%E7%94%A8/</guid><description>&lt;img src="https://tetsuou.github.io/p/mkdocs-material%E7%9A%84%E5%BA%94%E7%94%A8/post-bg-210108.png" alt="Featured image of post MkDocs-material的应用" />&lt;h2 id="效果">效果
+&lt;/h2>&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20210108155956618.png"
+loading="lazy"
+alt="image-20210108155956618"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://TetsuOu.github.io/Bookmarks/" target="_blank" rel="noopener"
+>https://TetsuOu.github.io/Bookmarks/&lt;/a>&lt;/p>
+&lt;h2 id="官方地址">官方地址
+&lt;/h2>&lt;p>&lt;a class="link" href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"
+>https://squidfunk.github.io/mkdocs-material/&lt;/a>&lt;/p>
+&lt;p>以下只做一下简单介绍，更多信息参考官方介绍。&lt;/p>
+&lt;h2 id="开始">开始
+&lt;/h2>&lt;p>MkDocs-material是MkDocs的一个第三方主题，界面优美。使用前应注意MkDocs是必需的。&lt;/p>
+&lt;h3 id="安装">安装
+&lt;/h3>&lt;p>可利用pip进行安装，除此之外，还可以使用docker、git进行安装，详见官网。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install mkdocs-material
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用">使用
+&lt;/h3>&lt;p>在项目中的配置文件&lt;code>mkdocs.yml&lt;/code>中进行配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">material&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="更改网站图标">更改网站图标
+&lt;/h4>&lt;p>新的图标放在&lt;code>docs&lt;/code>文件夹内的指定路径，如&lt;code>img/favicon.ico&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">favicon&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">img/favicon.ico&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="更改页面布局">更改页面布局
+&lt;/h4>&lt;p>参数配置如下，可以使最顶层的选项排序到上方&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">features&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">navigation.tabs&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如：&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20210108160950107.png"
+loading="lazy"
+alt="image-20210108160950107"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">nav&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Introduction&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;index.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">SiteNavigation&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;https://TetsuOu.github.io/SiteNavigation/&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Program&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Android&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Program/Android.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">C/C++&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Program/C++.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Java&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Program/Java.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Python&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Program/Python.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Windows&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Program/Windows.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Study&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Language&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Study/Language.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Computer Science&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Study/ComputerScience.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Life&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">Growing&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Life/Growing.md&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="本地预览">本地预览
+&lt;/h3>&lt;p>即使用&lt;code>mkdocs serve&lt;/code>&lt;/p>
+&lt;h3 id="部署">部署
+&lt;/h3>&lt;p>这里选择将其部署到Github Pages。&lt;/p>
+&lt;p>除了之前介绍过的在本地使用MkDocs自带的&lt;code>gh-deploy&lt;/code>命令进行部署外，还可以用Github Actions更为一劳永逸。&lt;/p>
+&lt;p>在项目根目录新建文件夹&lt;code>.github&lt;/code>，再在其中新建子文件夹&lt;code>workflows&lt;/code>，再进入该子文件夹新建文件&lt;code>ci.yml&lt;/code>，即该文件最终目录为&lt;code>/.github/workflows/ci.yml&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ci&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">main&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/setup-python@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">python-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">3.&lt;/span>&lt;span class="l">x&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">pip install mkdocs-material&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">mkdocs gh-deploy --force&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>此后，只要向仓库提交更新，该Action就会对站点进行更新。&lt;/p>
+&lt;h2 id="更多">更多
+&lt;/h2>&lt;p>还可以设置许多其他的选项，比如字体、颜色、右侧“Table of contens”所支持的目录级数等等，详见&lt;a class="link" href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"
+>官网&lt;/a>。&lt;/p></description></item><item><title>Webstack模板</title><link>https://tetsuou.github.io/p/webstack%E6%A8%A1%E6%9D%BF/</link><pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate><guid>https://tetsuou.github.io/p/webstack%E6%A8%A1%E6%9D%BF/</guid><description>&lt;img src="https://tetsuou.github.io/p/webstack%E6%A8%A1%E6%9D%BF/post-bg-201218.png" alt="Featured image of post Webstack模板" />&lt;h2 id="效果">效果
+&lt;/h2>&lt;p>&lt;a class="link" href="https://TetsuOu.github.io/SiteNavigation/" target="_blank" rel="noopener"
+>https://TetsuOu.github.io/SiteNavigation/&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201218160614522.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="官方地址">官方地址
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank" rel="noopener"
+>https://github.com/WebStackPage/WebStackPage.github.io&lt;/a>&lt;/p>
+&lt;h2 id="开始">开始
+&lt;/h2>&lt;p>官方地址给出了除&lt;strong>静态托管&lt;/strong>方式以外的使用方式的链接。&lt;/p>
+&lt;p>目前我只试用了静态托管方式，那就是选择&lt;code>clone&lt;/code>或&lt;code>fork&lt;/code>之后，主要对&lt;code>index.html&lt;/code>文件进行增删改，然后部署到Github Pages上。&lt;/p>
+&lt;p>可以用来熟悉前端语言。&lt;/p>
+&lt;h2 id="注意事项">注意事项
+&lt;/h2>&lt;h3 id="锚点设置">锚点设置
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">li&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;#Recommended&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;smooth&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">i&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;linecons-star&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">i&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;title&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Recommended&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">li&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201216162619038.png"
+loading="lazy"
+alt="image-20201216162619038"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h4&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-gray&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">i&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;linecons-tag&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;margin-right: 7px;&amp;#34;&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;Recommended&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">i&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Recommended&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h4&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;row&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;xe-widget xe-conversations box2 label-info&amp;#34;&lt;/span> &lt;span class="na">onclick&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;window.open(&amp;#39;https://www.wikipedia.org/&amp;#39;, &amp;#39;_blank&amp;#39;)&amp;#34;&lt;/span> &lt;span class="na">data-toggle&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;tooltip&amp;#34;&lt;/span> &lt;span class="na">data-placement&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;bottom&amp;#34;&lt;/span> &lt;span class="na">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;&amp;#34;&lt;/span> &lt;span class="na">data-original-title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://dribbble.com/&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;xe-comment-entry&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;xe-user-img&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">data-src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;../assets/images/logos/wekipedia.ico&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;lozad img-circle&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;40&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;xe-comment&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;#&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;xe-user-name overflowClip_1&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">strong&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>WikiPedia&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">strong&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;overflowClip_2&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>自由的百科全书&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>需要自己修改的就是 &lt;strong>&amp;lt;i&amp;gt;&lt;/strong> 标签里的锚点、&lt;strong>&amp;lt;img&amp;gt;&lt;/strong> 标签里的logo图片、&lt;strong>onclick&lt;/strong> 属性里的网址、&lt;strong>data-original-title&lt;/strong> 属性里的网址、&lt;strong>&amp;lt;strong&amp;gt;&lt;/strong> 标签里的网站名称和 &lt;strong>&amp;lt;p&amp;gt;&lt;/strong> 标签里的网站介绍。&lt;/p>
+&lt;h3 id="标签设置">标签设置
+&lt;/h3>&lt;p>注意一行的标签设置的是4个。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201216164019939.png"
+loading="lazy"
+alt="image-20201216164019939"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h4&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-gray&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">i&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;linecons-tag&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;margin-right: 7px;&amp;#34;&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;Recommended&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">i&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Recommended&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h4&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;row&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;row&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="c">&amp;lt;!-- 注意有多余4个标签时，要多起一个&amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;col-sm-3&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="linecons">linecons
+&lt;/h3>&lt;p>这里左侧的图标可以在&lt;code>assets\css\fonts\linecons\css\linecons-codes.css&lt;/code>中查询支持的icon&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201216170432246.png"
+loading="lazy"
+alt="image-20201216170432246"
+>&lt;/p></description></item><item><title>shields徽章的应用</title><link>https://tetsuou.github.io/p/shields%E5%BE%BD%E7%AB%A0%E7%9A%84%E5%BA%94%E7%94%A8/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://tetsuou.github.io/p/shields%E5%BE%BD%E7%AB%A0%E7%9A%84%E5%BA%94%E7%94%A8/</guid><description>&lt;img src="https://tetsuou.github.io/p/shields%E5%BE%BD%E7%AB%A0%E7%9A%84%E5%BA%94%E7%94%A8/post-bg-201213.jpg" alt="Featured image of post shields徽章的应用" />&lt;h2 id="效果">效果
+&lt;/h2>&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201213213608993.png"
+loading="lazy"
+alt="image-20201213213608993"
+>&lt;/p>
+&lt;h2 id="官方地址">官方地址
+&lt;/h2>&lt;p>&lt;a class="link" href="https://shields.io/" target="_blank" rel="noopener"
+>https://shields.io/&lt;/a>&lt;/p>
+&lt;p>以下只做一下简单介绍，更多信息参考官方介绍。&lt;/p>
+&lt;h2 id="静态徽章">静态徽章
+&lt;/h2>&lt;p>格式如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">https://img.shields.io/badge/&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">LABEL&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">MESSAGE&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>-&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">COLOR&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如&lt;code>https://img.shields.io/badge/Main%20Language-C++-green&lt;/code>，用图片格式引用，效果如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">![](https://img.shields.io/badge/Main%20Language-C++-green)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://img.shields.io/badge/Main%20Language-C&amp;#43;&amp;#43;-green"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;code>LABEL&lt;/code>此处为&amp;quot;Main Language&amp;quot;，显示为徽章的左侧文字；
+&lt;code>MESSAGE&lt;/code>此处为&amp;quot;C++&amp;quot;，显示为徽章的右侧文字；
+&lt;code>COLOR&lt;/code>此处为&amp;quot;green&amp;quot;，为徽章的右侧颜色。徽章左侧默认为黑色。&lt;/p>
+&lt;h2 id="动态徽章">动态徽章
+&lt;/h2>&lt;p>格式如下：（可以引用json、xml和yaml格式的文件，下面的是json）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">https://img.shields.io/badge/dynamic/json?url=&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">URL&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">&amp;amp;&lt;/span>label=&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">LABEL&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">&amp;amp;&lt;/span>query=&lt;span class="err">&amp;lt;&lt;/span>$.DATA.SUBDATA&amp;gt;&lt;span class="err">&amp;amp;&lt;/span>color=&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">COLOR&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">&amp;amp;&lt;/span>prefix=&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">PREFIX&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">&amp;amp;&lt;/span>suffix=&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">SUFFIX&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>动态徽章可以实现更多的功能，比如要显示github的粉丝数，可以借由工具让其自动更新显示，不再需要手动更改数据。&lt;/p>
+&lt;p>如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">[![GitHub](https://img.shields.io/badge/dynamic/json?logo=github&lt;span class="err">&amp;amp;&lt;/span>label=GitHub&lt;span class="err">&amp;amp;&lt;/span>labelColor=495867&lt;span class="err">&amp;amp;&lt;/span>color=blue&lt;span class="err">&amp;amp;&lt;/span>query=%24.data.totalSubs&lt;span class="err">&amp;amp;&lt;/span>url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DTetsuOu&lt;span class="err">&amp;amp;&lt;/span>suffix=%20followers)](https://github.com/TetsuOu)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果如下：
+&lt;a class="link" href="https://github.com/TetsuOu" target="_blank" rel="noopener"
+>&lt;img src="https://img.shields.io/badge/dynamic/json?logo=github&amp;amp;label=GitHub&amp;amp;labelColor=495867&amp;amp;color=blue&amp;amp;query=%24.data.totalSubs&amp;amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DTetsuOu&amp;amp;suffix=%20followers"
+loading="lazy"
+alt="GitHub"
+>&lt;/a>&lt;/p>
+&lt;p>&lt;code>logo&lt;/code>参数可以在左侧增添一个logo，支持的logo在&lt;a class="link" href="https://simpleicons.org/" target="_blank" rel="noopener"
+>https://simpleicons.org/&lt;/a>上。那要是该网站上没有所需要的logo呢？那就需要利用图片的base64编码了，后文再提。&lt;/p>
+&lt;p>&lt;code>labelColor&lt;/code>参数设置徽章左侧颜色。&lt;/p>
+&lt;p>&lt;code>color&lt;/code>参数设置徽章右侧颜色。&lt;/p>
+&lt;p>&lt;code>query&lt;/code>参数设置引用数据的相对路径。&lt;/p>
+&lt;p>&lt;code>url&lt;/code>参数设置数据来源。&lt;/p>
+&lt;p>&lt;code>suffix&lt;/code>参数设置数据后方的文字。&lt;/p>
+&lt;h3 id="substats">Substats
+&lt;/h3>&lt;p>在解释上文中的url时需要先介绍个工具——Substats，官方地址：&lt;a class="link" href="https://substats.spencerwoo.com/" target="_blank" rel="noopener"
+>https://substats.spencerwoo.com/&lt;/a>&lt;/p>
+&lt;p>简单的说，这个工具能返回一个json文件，能得到一些需要的数据，比如github账户的followers数量等：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-http" data-lang="http">&lt;span class="line">&lt;span class="cl">&lt;span class="err">https://api.spencerwoo.com/substats/?source=github&amp;amp;queryKey=TetsuOu
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>得到的数据格式为：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;status&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">200&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;data&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;totalSubs&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;subsInEachSource&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;github&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;failedSources&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>因此，上面的shields中的query参数可以填，&lt;code>$.data.totalSubs&lt;/code>，这里即为8。&lt;/p>
+&lt;p>更多用法参考官网。&lt;/p>
+&lt;h3 id="csdn徽章设置">CSDN徽章设置
+&lt;/h3>&lt;p>可惜的是，上面的提到的logo网站没有CSDN的Logo，Substats也不支持CSDN的查询。只能用比较笨的方法了。&lt;/p>
+&lt;p>效果如下：&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/qq_40889820" target="_blank" rel="noopener"
+>&lt;img src="https://img.shields.io/badge/dynamic/json?label=CSDN&amp;amp;labelColor=red&amp;amp;color=blue&amp;amp;query=%24.data.totalSubs&amp;amp;url=https://raw.githubusercontent.com/TetsuOu/TetsuOu/main/data.json&amp;amp;suffix=%20followers&amp;amp;logo=data:image/svg&amp;#43;xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8&amp;#43;CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI&amp;#43;CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPiAgPGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeD0iMCIgeT0iMCIKICAgIGhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBTUFBQUJFcElyR0FBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOCkFBQjZKZ0FBZ0lRQUFQb0FBQUNBNkFBQWRUQUFBT3BnQUFBNm1BQUFGM0NjdWxFOEFBQUJNbEJNVkVYOFZUSDhkRmY5cFpMOXhMZisKMGNmK3pzUDl1YXI4a252OFhqejhnMm4rMjlQLy8vLys5dlg5cnB6OFd6ajhXamY5dnJEKy92Nys0dHo4WlVYOFhUdisxODcrNStMOQpzSi85d0xMKzdlcjl2Szc4VmpQOXpzVCs2K2Y4aUcvOFZ6VDltWVQrOWZQK3o4WDlwSkQrNGR2OFpFUDhiMUgrNitiOGpuYjhaa1grCitQZis5UEg4YVVyOFh6MzhjRkw5c3FMOW5Zais4dS8rNyt6OFdUYjhmMlQ5dGFYOGgyMzl2N0g4WjBmK3pzVCsvZjMrMHNuKysvdjkKeTcvOXRxYjhlVno5cTVyOFlVRCsrL3I4WTBMOGJFMzhpWEg4VmpMKzFzNzhZVC84Z0dYKzlQTDhaa2IrOC9EOW00YjhZa0Q4V0RYOQp3N2IrOXZUOGhHcisrdnIrNk9QKzJkSCsxTXYrNE5yKytmZis3K3Y4Zm1QOXNLRCs4L0grN3VyOXFwbjlxcGo5d3JiK3pNSDl1NjM5Cm9ZMzhlbDc4VnpPYi9QRHVBQUFBQVdKTFIwUUxIOWZFd0FBQUFBZDBTVTFGQitRTEhnb2ZCRUczcmRnQUFBRUFTVVJCVkRqTFkyQVkKZElDUmlabUZsWTJkQTRjMEp4YzNCUER3OG1HUjVoY1E1SVlESVdFTWVSRlJrSVNZZ0xpRUpJZ2hoUzR2TFFNVWxaVURNZVVWRkxtNQpsZEFWS0FQbFZWU2hIRFYxUVEwMGVVMHRibTV0SFRoWFZ3L2RBSDJnQVFaNC9DOXZ5TTF0Wkl4SGdRblFBRk44SWNnRVZHQ0dUNEU1ClVJRUZQZ1dXM054VzB2Z1VXSE56MitDVFo3QUZXaUdDVDRFZFVJRTlQZ1hzUUFVTytCUTRPbkZ6R3pvakNiaTR1cUdxRUFBYTRlNEIKNTNwNmNZdWpLdkQyQWNXMnJ4K0k3VzhTWU1YTkhZaG1TVkF3S0prSWhvU0doVWVBMDFRSXVqTThJN21SZ1ZFVWhrTTlvbVBnMHJGeAp1dGo4d2g4VW42QmtuWmlVbkpMS01KZ0FBSzlnRy9zSHMyZGFBQUFBSlhSRldIUmtZWFJsT21OeVpXRjBaUUF5TURJd0xURXhMVE13ClZERXdPak14T2pBMEt6QXdPakF3OHVOT01nQUFBQ1YwUlZoMFpHRjBaVHB0YjJScFpua0FNakF5TUMweE1TMHpNRlF4TURvek1Ub3cKTkNzd01Eb3dNSU8rOW80QUFBQUFTVVZPUks1Q1lJST0iIC8&amp;#43;Cjwvc3ZnPgo="
+loading="lazy"
+alt="GitHub"
+>&lt;/a>&lt;/p>
+&lt;h4 id="图标">图标
+&lt;/h4>&lt;p>首先是CSDN的图标制作。&lt;/p>
+&lt;p>进入网址&lt;a class="link" href="https://blog.csdn.net/favicon.ico" target="_blank" rel="noopener"
+>https://blog.csdn.net/favicon.ico&lt;/a>，获取CSDN的图标文件，&lt;code>favicon.ico&lt;/code>&lt;/p>
+&lt;p>然后随便找一个可以将图片转base64的网站进行转换即可。&lt;/p>
+&lt;p>我这里是将其图标文件先转成&lt;code>.svg&lt;/code>格式再编码的：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPiAgPGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeD0iMCIgeT0iMCIKICAgIGhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBTUFBQUJFcElyR0FBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOCkFBQjZKZ0FBZ0lRQUFQb0FBQUNBNkFBQWRUQUFBT3BnQUFBNm1BQUFGM0NjdWxFOEFBQUJNbEJNVkVYOFZUSDhkRmY5cFpMOXhMZisKMGNmK3pzUDl1YXI4a252OFhqejhnMm4rMjlQLy8vLys5dlg5cnB6OFd6ajhXamY5dnJEKy92Nys0dHo4WlVYOFhUdisxODcrNStMOQpzSi85d0xMKzdlcjl2Szc4VmpQOXpzVCs2K2Y4aUcvOFZ6VDltWVQrOWZQK3o4WDlwSkQrNGR2OFpFUDhiMUgrNitiOGpuYjhaa1grCitQZis5UEg4YVVyOFh6MzhjRkw5c3FMOW5Zais4dS8rNyt6OFdUYjhmMlQ5dGFYOGgyMzl2N0g4WjBmK3pzVCsvZjMrMHNuKysvdjkKeTcvOXRxYjhlVno5cTVyOFlVRCsrL3I4WTBMOGJFMzhpWEg4VmpMKzFzNzhZVC84Z0dYKzlQTDhaa2IrOC9EOW00YjhZa0Q4V0RYOQp3N2IrOXZUOGhHcisrdnIrNk9QKzJkSCsxTXYrNE5yKytmZis3K3Y4Zm1QOXNLRCs4L0grN3VyOXFwbjlxcGo5d3JiK3pNSDl1NjM5Cm9ZMzhlbDc4VnpPYi9QRHVBQUFBQVdKTFIwUUxIOWZFd0FBQUFBZDBTVTFGQitRTEhnb2ZCRUczcmRnQUFBRUFTVVJCVkRqTFkyQVkKZElDUmlabUZsWTJkQTRjMEp4YzNCUER3OG1HUjVoY1E1SVlESVdFTWVSRlJrSVNZZ0xpRUpJZ2hoUzR2TFFNVWxaVURNZVVWRkxtNQpsZEFWS0FQbFZWU2hIRFYxUVEwMGVVMHRibTV0SFRoWFZ3L2RBSDJnQVFaNC9DOXZ5TTF0Wkl4SGdRblFBRk44SWNnRVZHQ0dUNEU1ClVJRUZQZ1dXM054VzB2Z1VXSE56MitDVFo3QUZXaUdDVDRFZFVJRTlQZ1hzUUFVTytCUTRPbkZ6R3pvakNiaTR1cUdxRUFBYTRlNEIKNTNwNmNZdWpLdkQyQWNXMnJ4K0k3VzhTWU1YTkhZaG1TVkF3S0prSWhvU0doVWVBMDFRSXVqTThJN21SZ1ZFVWhrTTlvbVBnMHJGeAp1dGo4d2g4VW42QmtuWmlVbkpMS01KZ0FBSzlnRy9zSHMyZGFBQUFBSlhSRldIUmtZWFJsT21OeVpXRjBaUUF5TURJd0xURXhMVE13ClZERXdPak14T2pBMEt6QXdPakF3OHVOT01nQUFBQ1YwUlZoMFpHRjBaVHB0YjJScFpua0FNakF5TUMweE1TMHpNRlF4TURvek1Ub3cKTkNzd01Eb3dNSU8rOW80QUFBQUFTVVZPUks1Q1lJST0iIC8+Cjwvc3ZnPgo=
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意shields对图片有大小限制，不超过8192 bytes。&lt;/p>
+&lt;h4 id="数据获取">数据获取
+&lt;/h4>&lt;p>然后是数据的获取，我这里想使用CSDN账户上的粉丝数，因为目前没找到其他工具，自己也不会写，就只能自己将json文件保存在github上：&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/zezezeking/picturebed/main/image-20201213223026177.png"
+loading="lazy"
+alt="image-20201213223026177"
+>&lt;/p>
+&lt;p>点击&lt;code>Raw&lt;/code>查看源文件地址：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://raw.githubusercontent.com/TetsuOu/TetsuOu/main/data.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最终打造成了“伪 动态徽章”哈哈，每次只能自己手动更新。&lt;/p>
+&lt;p>期待以后能有支持查询CSDN粉丝数的工具出现。&lt;/p>
+&lt;h2 id="其他">其他
+&lt;/h2>&lt;p>shields还支持一些预置的一些徽章生成，比如GitHub Workflow Status、License等&lt;/p>
+&lt;h3 id="github-workflow-status">Github Workflow Status
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">![](https://img.shields.io/github/actions/workflow/status/TetsuOu/TetsuOu.github.io/deploy.yml?branch=master)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://img.shields.io/github/actions/workflow/status/TetsuOu/TetsuOu.github.io/deploy.yml?branch=master"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">![Github License](https://img.shields.io/github/license/TetsuOu/TetsuOu.github.io)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://img.shields.io/github/license/TetsuOu/TetsuOu.github.io"
+loading="lazy"
+alt="Github License"
+>&lt;/p></description></item></channel></rss>
